@@ -1,0 +1,31 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        applicationId "com.bigkoo.pickerviewdemo"
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions{
+        checkReleaseBuilds false
+        abortOnError false
+    }
+}
+
+dependencies {
+    implementation project(':pickerview')
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.code.gson:gson:2.10.1'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+}

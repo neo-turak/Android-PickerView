@@ -1,0 +1,27 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+android {
+    compileSdkVersion 32
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 32
+        versionCode 34
+        versionName "4.1.9"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+dependencies {
+    api project(path: ':wheelview')
+    implementation 'androidx.annotation:annotation:1.4.0'
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.8.10'
+}
