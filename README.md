@@ -1,4 +1,4 @@
-## 注意⚠️：已停止更新，原有版本jcenter库可以继续使用。建议直接下载源码引入 module 到自己项目改造。
+## 注意⚠️：原项目已停止更新，我转换成Kotlin，升级各个版本。
 
 ## Android-PickerView
 [![API](https://img.shields.io/badge/API-9%2B-brightgreen.svg)](https://android-arsenal.com/api?level=9) 
@@ -13,10 +13,6 @@
 **Wiki文档，Wiki文档，Wiki文档 !~ 重要的事情说三遍**
 
 #### 对于使用上有任何疑问或优化建议等，欢迎加入QQ群讨论交流技术问题。
-
-交流群1： 387051294（已满）
-
-交流群2： 219962328（已满）
 
 ## 介绍
 
